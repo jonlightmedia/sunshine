@@ -1,0 +1,43 @@
+.social {
+	.clearfix;
+	font-size: 14px;
+
+	a{
+		color: #fff;
+		.text-shadow;
+	}
+	
+	.contact-list{
+		float: left;
+		li{
+			float: left;
+			margin-right: 15px;
+		}
+	}
+	.social-list{
+		li{
+			float: left;
+			
+
+			& ~ li{
+				margin-left: 8px;
+			}
+		}
+		a{
+			display: block;
+			background: @light;
+			font-size: 35px;
+			width: 70px;
+			height: 70px; 
+			padding: 13px 15px;
+			.borderbox;
+			text-align: center;
+			.transition(all linear .1s);
+
+			&:hover,&:focus{
+				background: @base_color;
+				color: #fff;
+			}
+		}
+	}
+}

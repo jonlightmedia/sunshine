@@ -1,0 +1,31 @@
+
+.search-input{
+	position: relative;
+	&:after{
+		content: "\e800";
+		position: absolute;
+		right: 5px;
+		.icon;
+		.translate(-50%,-50%);
+		top: 48%;
+		z-index: 2;
+
+	}
+	.submit_search{
+		position: absolute;
+		right: -5px;
+		.translate(-50%,-50%);
+		top: 48%;
+		text-indent: -999999px;
+		z-index: 5;
+		height: 100%;
+		width: 30px;
+		background: transparent;
+		outline: none!important;
+		border: none;
+	}
+	.form-control{
+		padding-right: 40px;
+		font-size: @base_font_size;
+	}
+}

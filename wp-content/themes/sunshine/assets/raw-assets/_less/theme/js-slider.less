@@ -1,0 +1,130 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	
+}
+.owl-carousel{
+	&:hover{
+		.owl-buttons{
+			.opacity(1);
+		}
+	}
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+	z-index: 200;
+	position: relative;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+.owl-buttons{
+	.opacity(1);
+	.transition(all linear .2s);
+	position: absolute;
+	top: 12%;
+	left: 0;
+	right: 0;
+	div{
+		position: relative;
+		z-index: 100;
+		padding: 20px;
+		overflow: hidden;
+		outline: none!important;
+		.transition(all linear .3s);
+		border: 1px solid @bw4;
+		.opacity(1);
+		color: @bw4;
+		background-color: #fff;
+		font-size: 10px;
+
+		&:hover{
+			background-color: #fff;
+			background-size: 15px 35px;
+			border: 1px solid @base_color;
+			color: @base_color;
+		}
+	}
+	.owl-prev{
+		float: left;
+		background: url("@{image-url}/icons/carret-l.png") no-repeat;
+		background-position: center;
+		animation: arrow-l 1s infinite;
+		margin-left: -70px;
+	}
+	.owl-next{
+		float: right;
+		background: url("@{image-url}/icons/carret-r.png") no-repeat;
+		background-position: center;
+		animation: arrow-r 1s infinite;
+		margin-right: -70px;
+	}
+}
+
+.slider-list-md{
+	.owl-buttons{
+		top: 40%;
+	}
+}
+

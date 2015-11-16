@@ -1,0 +1,93 @@
+.list-reset{
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0;
+    li{
+        margin-bottom: 0;
+    }
+  ol, ul {
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 0;
+
+    li{
+    	margin-bottom: 0;
+    	padding-left: 0px;
+    	&:before{
+    		content: '';
+    		display: none;
+    	}
+    }
+  } 
+}
+
+.list-block{
+    li{
+        display: block;
+
+        a{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+
+.list-ordered {
+    position: relative;
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    padding: 0;
+    margin-bottom: 0px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+     ol {
+        margin: 0 0 0 2em; /* Add some left margin for inner lists */
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 18px;
+        width: 1px;
+        height: 90%;
+        background-color: @base_border_color;
+        z-index: 1;
+    }
+
+
+     a,span{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 3.5em;
+        *padding: .4em;
+        margin: .5em 0;
+        text-decoration: none;
+        transition: all .3s ease-out;  
+        z-index: 10; 
+    
+            &:before{
+                content: counter(li);
+                counter-increment: li;
+                position: absolute; 
+                padding: 10px;
+                left: -5px;
+                top: 40%;
+                margin-top: -15px;
+                background: @bw3;
+                height: 45px;
+                width: 45px;
+                line-height: 1.5em;
+                text-align: center;
+                .t-label;
+                .border-radius(100%);
+                font-size: 14px;
+                transition: all .3s ease-out;
+            }
+
+
+        }
+
+}

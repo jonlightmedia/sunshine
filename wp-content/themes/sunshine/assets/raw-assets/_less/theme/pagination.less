@@ -1,0 +1,49 @@
+.wp-pagenavi{
+	float: right;
+	& > span,&>a{
+		padding: 10px 15px;
+		color: @base_font_color;
+		border: 1px solid @base_border_color2;
+		font-size: 15px;
+		background-color: #fff;
+		margin: 0 2px;
+
+		.icon{
+			padding: 0 0;
+			border: none;
+		}
+	}
+
+	a{
+		.transition(linear all .1s);
+		&:hover{
+			color: #fff;
+			background-color: @base_color;
+			text-decoration: none;
+			border: 1px solid @base_color;
+			.icon{
+				color: #fff;
+				background-color: transparent;
+			}
+		}
+	}
+	.current{
+		color: #adadad;
+		background-color: @bw4;
+	}
+	.pages{
+		 & ~ span, & ~ a{
+
+		 }
+	}
+	.nextpostslink{
+		font-size: 20px;
+		padding: 18px 20px;
+	}
+}
+.pagination{
+	display: block;
+	width: 100%;
+	padding-top: 40px;
+	border-top: 1px solid @base_border_color2;
+}

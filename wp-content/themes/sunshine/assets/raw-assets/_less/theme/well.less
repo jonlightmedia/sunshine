@@ -1,0 +1,118 @@
+.well {
+	position: relative;
+	margin-bottom: 20px;
+	background-color: @bw2;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	.clearfix;
+}
+.well-header{
+	position: relative;
+	margin-bottom: 30px;
+	text-align: center;
+	img{
+		margin: auto;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		width: 75px;
+		height: 1px;
+		background: @base_border_color;
+		.translate(-50%,-50%);
+	}
+	p{
+		font-size: 20px;
+		padding: 10px 0 25px;
+	}
+
+	&.well-header-form{
+		margin-bottom: 15px;
+		&:after{
+			display: none;
+		}
+	}
+}
+.well-info{
+	background: #f3f8f4;
+
+	.well-content{
+		font-size: 15px;
+		
+	}
+}
+.well-shorten{
+	.well-content{
+		p{
+			display: none;
+
+			&:first-child{
+				display: block;
+			}
+		}
+	}
+}
+.well-compact{
+	padding: 50px;
+}
+.well-md{
+	padding: 30px 0px 0px;
+}
+.well-title{
+	padding: 0 7px;
+	font-size: 18px;
+}
+
+.well-white{
+	background: #fff;
+}
+.well-cont{
+	padding: 10px;
+}
+.well-sm{
+	padding: 10px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.well-clearfix{
+	clear: both;
+	display: block;
+	float: none;
+	.clearfix;
+}
+.well-bordered{
+	border: 1px solid @base_border_color;
+}
+
+.well-widget{
+	.well-title{
+		.t-label;
+		font-size: 16px;
+		border: 1px solid @base_border_color;
+		padding: 10px;
+		color: @bw6;
+	}
+	.well-core{
+		.bt-0;
+		border: 1px solid @base_border_color;
+		padding: 0 20px;
+
+		.icon{
+			font-size: 10px;
+		}
+	}
+	.well-action{
+		padding: 10px 0 20px;
+	}
+}
+
+.well-labeled{
+	.t-title{
+		text-align: center;
+		border-bottom: 1px solid @base_border_color;
+		padding: 10px 0 25px;
+	}
+	padding: 30px;
+}

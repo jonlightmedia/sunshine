@@ -1,0 +1,44 @@
+.l-header{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	background: #fff;
+	.transition(all 0.2s cubic-bezier(0.53, 0.54, 0.54, 0.54));
+	border-bottom: 1px solid #fff;
+
+	&.pushed{
+		left: -260px;
+	}
+
+	&.shrink{
+		border-bottom: 1px solid @base_border_color;
+	}
+	
+}
+.l-content{
+
+}
+.l-footer{
+	background-color: @dark;
+	font-size: 13px;
+	padding: 60px 0;
+
+	.t-title{
+		color: #fff;
+	}
+
+}
+.footnotes{
+	color: #fff;
+}
+
+.copyright{
+	border-left: 1px solid rgba(255,255,255,.08);
+	img{
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+.widget{
+
+}
+.widget-aside{
+	padding: 30px 0;
+
+	&~.widget-aside{
+		border-top: solid 1px @base_border_color;
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+.widget-core{
+	clear: both;
+	display: block;
+	.clearfix;
+}
+
+.widget-nav{
+	line-height: 30px;
+	a{
+		color: @bw5;
+		font-size: 15px;
+
+		&:focus,&:hover, &:active{
+			color: @base_color;
+		}
+	}
+
+}

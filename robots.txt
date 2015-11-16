@@ -1,0 +1,22 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow: /wp-content/plugins/
+Allow: /?display=wide
+Allow: /wp-content/uploads/
+Disallow: /wp-content/plugins/
+Disallow: /readme.html
+Disallow: /refer/
+
+Sitemap: http://juvita.lmweb.com.au/page-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/slider-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/tattoo-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/injecting-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/treatments-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/packages-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/products-sitemap.xml
+Sitemap: http://juvita.lmweb.com.au/clinics-sitemap.xml
+
+
+

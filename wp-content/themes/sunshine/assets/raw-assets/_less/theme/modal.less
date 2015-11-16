@@ -1,0 +1,38 @@
+.modal{
+	z-index: 9999;
+	button.close{
+		position: absolute;
+		right: 10px;
+	    top: -2px;
+	    z-index: 100;
+	    font-size: 35px;
+	    .opacity(.4);
+	    .t-label;
+	}
+	.modal-body{
+		padding: 30px;
+	}
+}
+.modal-title{
+	font-weight: 800;
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+.modal-md{
+	width: 770px;
+	max-width: 98%;
+}
+.modal-header{
+	border-bottom: none;
+	padding: 25px 30px 15px;
+
+	&+.modal-body{
+		padding-top: 0px;
+	}
+}
+.modal-footer{
+	margin: 0 25px;
+}
+.modal-dialog{
+	
+}

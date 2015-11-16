@@ -1,0 +1,132 @@
+.slider{
+	position: relative;
+}
+.slider-main{
+	margin: 0 0 0 0;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	border: none;
+	z-index: 9;
+	
+	.flex-control-nav{
+		position: absolute;
+		bottom : 10px;
+	}
+	.slides{
+		background: transparent;
+
+		li{
+			position: relative;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			&.bg-light{
+				.slide-content, .t-title{
+					color: @base_color;
+
+				}
+			}
+		}
+	}
+	.slide-content{
+		max-width: 395px;
+		position: absolute;
+		bottom: 45%;
+		right: 20px;
+		letter-spacing: 1px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+
+.slide-content{
+	color: #fff;
+	z-index: 20;
+	top: auto!important;
+	
+	.t-title{
+		color: #fff;
+		margin: 0 0 7px;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+
+.slider-list{
+	border: none;
+	background: transparent;
+	.slide-price{
+		font-size: 50px;
+		color: @base_font_color;
+		margin: 20px 0;
+	}
+	.slide-desc{
+		min-height: 50px;
+	}
+	.slides{
+		img{
+			width: 100%;
+		}
+		&>li{
+			.list-reset;
+			padding-right: 40px;
+		}
+	}
+	img{
+		display: block;
+	}
+	a{
+		.clearfix;
+	}
+	.owl-item{
+		padding-right: 25px;
+	}
+	
+	&.slider-list-md{
+		li{
+		}
+		.slides{
+			&>li{
+				.list-reset;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+
+.flex-direction-nav{
+	.list-reset;
+	a{
+		width: 21px;
+		height: 65px;
+		text-indent: -99999px;
+		overflow: hidden;
+		outline: none!important;
+		&:before{
+			display:none;
+			content: '';
+		}
+		
+	}
+	.flex-prev{
+		background: url("@{image-url}/icons/carret-l.png") no-repeat;
+	}
+	.flex-next{
+		background: url("@{image-url}/icons/carret-r.png") no-repeat;
+	}
+}
+
+.slider-single{
+	margin-bottom: 5px;
+
+	.flex-direction-nav {
+		a{
+			color: #fff; 
+    		text-shadow: 1px 1px 0 #000;
+		}
+		
+	}
+}
